@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        // <Route path="/" element={<LandingPage/>} />
+        
         <Route path="/" element={<SignUp />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/meet/:id" element={<Meet />} />
