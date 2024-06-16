@@ -132,10 +132,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Author:** Farhan Shahid
-- **Email:** farhan078609@gmail.com
-- **LinkedIn:** [Farhan Shahid](https://www.linkedin.com/in/farhan-shahid-709baa248/)
-- **GitHub:** [farhan7479](https://github.com/farhan7479)
+- **Authors:** Farhan Shahid and Garv Goel
+- **Emails:**
+  - Farhan Shahid: farhan078609@gmail.com
+  - Garv Goel: farhan078609@gmail.com
+- **LinkedIn:**
+  - [Farhan Shahid](https://www.linkedin.com/in/farhan-shahid-709baa248/)
+  - [Garv Goel](https://www.linkedin.com/in/garv-goel/)
+- **GitHub:**
+  - [Farhan Shahid (farhan7479)](https://github.com/farhan7479)
+  - [Garv Goel (garvgoel)](https://github.com/garvgoel08)
 
 ---
 
