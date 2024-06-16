@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# EZ-Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EZ-Interview is a web application designed to facilitate the interview process with real-time face detection, gaze tracking, and AI-powered test generation. This project aims to improve the efficiency and effectiveness of remote interviews by providing advanced features for both interviewers and candidates.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time Face Detection and Gaze Tracking:** Uses AI to monitor the candidate's focus during the interview.
+- **AI-Powered Test Generation:** Automatically generates test questions based on predefined criteria.
+- **Automated Interview Scheduling:** Allows interviewers to schedule interviews with automated email notifications.
+- **Secure User Authentication:** Ensures that only authorized users can access the platform.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Real-time Communication:** Socket.io
+- **Hosting:** Firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Check out the live demo of the project: [EZ-Interview Demo](https://ez-interview-demo.example.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- MongoDB
+- Firebase Account
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```sh
+    git clone https://github.com/farhan7479/ez-interview.git
+    cd ez-interview
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```sh
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Set up environment variables:**
 
-## Learn More
+    Create a `.env` file in the root directory and add the following variables:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```env
+    REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
+    REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+    REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
+    REACT_APP_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+    REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+    REACT_APP_FIREBASE_APP_ID=your-firebase-app-id
+    MONGODB_URI=your-mongodb-uri
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Run the development server:**
 
-### Code Splitting
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    The app should now be running on [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Register and log in:**
 
-### Making a Progressive Web App
+    Create a new account or log in with existing credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Schedule an interview:**
 
-### Advanced Configuration
+    Navigate to the scheduling page and select a suitable date and time for the interview. Automated email notifications will be sent to the candidate.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Conduct the interview:**
 
-### Deployment
+    Start the interview session and use the real-time face detection and gaze tracking features to monitor the candidate. Generate and administer test questions as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment
 
-### `npm run build` fails to minify
+To deploy the project on Firebase, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Install Firebase CLI:**
+
+    ```sh
+    npm install -g firebase-tools
+    ```
+
+2. **Login to Firebase:**
+
+    ```sh
+    firebase login
+    ```
+
+3. **Initialize Firebase project:**
+
+    ```sh
+    firebase init
+    ```
+
+    Select the following options:
+    - Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+    - Use an existing project
+    - Build directory: `build`
+    - Single-page app: `y`
+
+4. **Build the project:**
+
+    ```sh
+    npm run build
+    ```
+
+5. **Deploy to Firebase:**
+
+    ```sh
+    firebase deploy
+    ```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- **Author:** Farhan Shahid
+- **Email:** farhan078609@gmail.com
+- **LinkedIn:** [Farhan Shahid](https://www.linkedin.com/in/farhan-shahid-709baa248/)
+- **GitHub:** [farhan7479](https://github.com/farhan7479)
+
+---
+
+Feel free to reach out if you have any questions or if you'd like to collaborate on this project!
