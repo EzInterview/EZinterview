@@ -12,8 +12,8 @@ export default function Login() {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    email: "test@gmail.com",
+    password: "test@123",
   });
   const navigate = useNavigate();
   const authtoken = localStorage.getItem("auth-token");
