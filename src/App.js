@@ -26,7 +26,7 @@ function App() {
     <Router>
       <Routes>
         
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/meet/:id" element={<Meet />} />
         <Route path="/interview/:id" element={<InterviewerMeet />} />
