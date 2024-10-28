@@ -131,7 +131,7 @@ export default function SignUp() {
             </button>
           </div>
           <div className="SignUpInput" style={{ textAlign: 'center' }}>
-            <p>Already have an account? <Link to="/login">Login</Link></p>
+            <p>Already have an account? <Link to="/">Login</Link></p>
           </div>
         </form>
       </div>
