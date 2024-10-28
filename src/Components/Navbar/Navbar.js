@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const logout = () => {
     localStorage.removeItem("auth-token");
-    window.location.href = "/login";
+    window.location.href = "/";
   };
 
   const toggleSidebar = () => {
