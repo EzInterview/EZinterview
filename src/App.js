@@ -26,11 +26,11 @@ function App() {
     <Router>
       <Routes>
         
-        <Route path="/" element={<SignUp />} />
+        <Route path="/" element={<Login />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/meet/:id" element={<Meet />} />
         <Route path="/interview/:id" element={<InterviewerMeet />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signUp" element={<SignUp />} />
         <Route path='/candidate' element={<Dashboard />} />
         <Route path='/interviews' element={<Dashboard />} />
         <Route path='/profile' element={<Dashboard />} />
