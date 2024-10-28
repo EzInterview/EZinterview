@@ -104,7 +104,7 @@ export default function Login() {
             <button type="submit">Log In</button>
           </div>
           <div className="SignUpInput" style={{ textAlign: 'center' }}>
-            <p>Dont't have an account? <a href="/">Signup</a></p>
+            <p>Dont't have an account? <a href="/signUp">Signup</a></p>
           </div>
         </form>
       </div>
